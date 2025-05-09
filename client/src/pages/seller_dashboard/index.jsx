@@ -15,6 +15,7 @@ import SellerOverview from "./SellerOverview";
 import { RiBardFill } from "react-icons/ri";
 import CropSenseAI from "./CropSenseAI";
 import WeatherPredictions from "./WeatherPredictions";
+import ChatBot from "../../components/chat/ChatBot";
 import { useCookies } from "react-cookie";
 
 
@@ -100,6 +101,7 @@ const NewSellerDashboard = () => {
         <Outlet />
         {/* {links[selected].renderComponent} */}
       </div>
+      <ChatBot />
     </div>
   );
 };

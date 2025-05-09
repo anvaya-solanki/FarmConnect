@@ -15,6 +15,7 @@ const graph = require("./routes/graph.js");
 const ai = require("./routes/ai.js");
 const auth = require("./routes/auth");
 const admin = require("./routes/admin");
+const chat = require("./routes/chat");
 
 const PORT = 8080;
 const app = express();
@@ -44,6 +45,7 @@ app.use("/order", order);
 app.use("/faqs", faq);
 app.use("/graph", graph);
 app.use("/ai", ai);
+app.use("/chat", chat);
 app.use("/api/admin", admin);
 
 server.listen(PORT, () => {

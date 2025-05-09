@@ -4,6 +4,7 @@ import { FaProductHunt } from "react-icons/fa6";
 import { PiShoppingBagOpenFill } from "react-icons/pi";
 import { FaQq } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
+import { WiDaySunny } from "react-icons/wi";
 import SellerProducts from "./SellerProducts";
 import SellerOrderRequests from "./SellerOrderRequests";
 import SellerFAQs from "./SellerFAQs";
@@ -13,6 +14,7 @@ import { notify } from "../../utils/helper/notification";
 import SellerOverview from "./SellerOverview";
 import { RiBardFill } from "react-icons/ri";
 import CropSenseAI from "./CropSenseAI";
+import WeatherPredictions from "./WeatherPredictions";
 import { useCookies } from "react-cookie";
 
 
@@ -46,6 +48,12 @@ const links = [
     icon: <RiBardFill />,
     renderComponent: <CropSenseAI />,
     path: "cropsense-ai"
+  },
+  {
+    text: "Weather",
+    icon: <WiDaySunny />,
+    renderComponent: <WeatherPredictions />,
+    path: "weather"
   }
 ];
 

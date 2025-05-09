@@ -18,6 +18,7 @@ import SellerProducts from "./pages/seller_dashboard/SellerProducts";
 import SellerOrderRequests from "./pages/seller_dashboard/SellerOrderRequests";
 import SellerFAQs from "./pages/seller_dashboard/SellerFAQs";
 import CropSenseAI from "./pages/seller_dashboard/CropSenseAI";
+import WeatherPredictions from "./pages/seller_dashboard/WeatherPredictions";
 import AdminDashboard from './pages/admin/AdminDashboard'
 
 function App() {
@@ -61,6 +62,11 @@ function App() {
               exact
               path="cropsense-ai"
               element={<CropSenseAI />}
+            />
+            <Route
+              exact
+              path="weather"
+              element={<WeatherPredictions />}
             />
           </Route>
 
